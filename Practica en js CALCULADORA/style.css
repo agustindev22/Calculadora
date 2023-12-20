@@ -1,0 +1,79 @@
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:sans-serif;
+
+}
+body{
+    min-height: 100vh;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculadora{
+    background-color:rgb(5, 51, 14)  ;
+    color:white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 350px;
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 2rem;
+    gap: .5rem;
+}
+.pantalla{
+    grid-column: 1 / 5 ;
+    padding: 2rem;
+    background-color: rgb(76, 76, 76);
+    font-size: 2rem;
+    text-align: right;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+
+}
+.btn {
+    background-color: rgba(104, 238, 216, 0.042)  ;
+    color:white ;
+    border:0 ;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px rgb(0, 0, 0);
+    border-radius: 2rem;
+}
+.btn:hover{
+    background-color: gainsboro;
+    border-radius: 1.5rem;
+}
+#cero{
+  grid-column: span 2;
+}
+#igual{
+    grid-row: span 2;
+    background-color: rgb(10, 97, 183) ;
+}
+#igual:hover{
+    background-color:rgb(19, 18, 19) ;
+}
+#borrar{
+    background-color: gray;
+
+    
+}
+#c{
+    background-color: goldenrod;
+}
+#borrar:hover{
+    background-color: rgb(37, 36, 36);
+}
+#cero{
+    background-color: gray;
+}
